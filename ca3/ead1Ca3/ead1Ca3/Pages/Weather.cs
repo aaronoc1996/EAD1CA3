@@ -27,6 +27,55 @@ namespace ead1Ca3.Pages
                 ErrorMessage = e.Message;
             }
 
+            try
+            {
+                if (cityId == 560743)
+                {
+                    city = "Dublin";
+                }
+
+                else if (cityId == 2151330)
+                {
+                    city = "Beijing";
+                }
+
+                else if (cityId == 26042)
+                {
+                    city = "Leeds";
+                }
+                else if (cityId == 650272)
+                {
+                    city = "Frankfurt";
+                }
+                else if (cityId == 36615)
+                {
+                    city = "Sunderland";
+                }
+                else if (cityId == 721943)
+                {
+                    city = "Rome";
+                }
+                else if (cityId == 455825)
+                {
+                    city = "Rio";
+                }
+                else if (cityId == 2378426)
+                {
+                    city = "Charlotte";
+                }
+                else if (cityId == 766273)
+                {
+                    city = "Madrid";
+                }
+                else if (cityId == 2452078)
+                {
+                    city = "Minneapolis";
+                }
+            }
+            catch (Exception e)
+            {
+                ErrorMessage = e.Message;
+            }
 
 
         }
