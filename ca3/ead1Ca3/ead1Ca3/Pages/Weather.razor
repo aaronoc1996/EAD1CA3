@@ -1,0 +1,49 @@
+﻿@page "/weather"
+@inject HttpClient Http
+
+<h3>Weather in @city</h3>
+
+
+@if (Main == null)
+{
+<p><em>Loading...</em></p> }
+else
+{
+
+<div class="mb-2 p-3 col-sm-5">
+    <select class="form-control" @bind="cityId" @onclick="@GetDataAsync">
+        <option selected disabled value="-1"> Select Location</option>
+        <option value=560743> Dublin</option>
+        <option value=2151330> Beijing</option>
+        <option value=26042> Leeds</option>
+        <option value=650272> Frankfurt</option>
+        <option value=36615>Sunderland</option>
+        <option value=721943> Rome</option>
+        <option value=455825> Rio</option>
+        <option value=2378426> Charlotte</option>
+        <option value=766273> Madrid</option>
+        <option value=2452078>Minneapolis</option>
+    </select>
+</div>
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Date</th>
+                            <th>Max Temp</th>
+                            <th>Min Temp</th>
+                            <th>wind speed</th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var weatherForecast in Main.consolidated_weather)
+                        {
+        <tr>
+            <td>@weatherForecast.applicable_date</td>
+            <td>@weatherForecast.max_temp</td>
+            <td> @weatherForecast.min_temp</td>
+            <td>@weatherForecast.wind_speed</td>
+        </tr>}
+                    </tbody>
+                </table>}

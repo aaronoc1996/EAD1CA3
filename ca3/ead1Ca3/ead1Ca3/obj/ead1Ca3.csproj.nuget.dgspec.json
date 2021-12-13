@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aaron\\source\\ca3\\ead1Ca3\\ead1Ca3\\ead1Ca3.csproj": {}
+    "C:\\Users\\Aaron\\Documents\\GitHub\\EAD1CA3\\ca3\\ead1Ca3\\ead1Ca3\\ead1Ca3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aaron\\source\\ca3\\ead1Ca3\\ead1Ca3\\ead1Ca3.csproj": {
+    "C:\\Users\\Aaron\\Documents\\GitHub\\EAD1CA3\\ca3\\ead1Ca3\\ead1Ca3\\ead1Ca3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aaron\\source\\ca3\\ead1Ca3\\ead1Ca3\\ead1Ca3.csproj",
+        "projectUniqueName": "C:\\Users\\Aaron\\Documents\\GitHub\\EAD1CA3\\ca3\\ead1Ca3\\ead1Ca3\\ead1Ca3.csproj",
         "projectName": "ead1Ca3",
-        "projectPath": "C:\\Users\\Aaron\\source\\ca3\\ead1Ca3\\ead1Ca3\\ead1Ca3.csproj",
+        "projectPath": "C:\\Users\\Aaron\\Documents\\GitHub\\EAD1CA3\\ca3\\ead1Ca3\\ead1Ca3\\ead1Ca3.csproj",
         "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aaron\\source\\ca3\\ead1Ca3\\ead1Ca3\\obj\\",
+        "outputPath": "C:\\Users\\Aaron\\Documents\\GitHub\\EAD1CA3\\ca3\\ead1Ca3\\ead1Ca3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
