@@ -46,45 +46,55 @@ else
                         @foreach (var weatherForecast in Main.consolidated_weather)
                         {
 
-                            <tr>
-                                <td>@weatherForecast.applicable_date</td>
-                                <td>@Math.Ceiling(weatherForecast.max_temp)</td>
-                                <td> @Math.Ceiling(weatherForecast.min_temp)</td>
-                                <td>@Math.Ceiling(weatherForecast.wind_speed)</td>
-                                <td>@weatherForecast.weather_state_name</td>
-                            </tr>
-}
+                        <tr>
+                            <td>@weatherForecast.applicable_date</td>
+                            <td>@Math.Ceiling(weatherForecast.max_temp)</td>
+                            <td> @Math.Ceiling(weatherForecast.min_temp)</td>
+                            <td>@Math.Ceiling(weatherForecast.wind_speed)</td>
+                            <td>@weatherForecast.weather_state_name</td>
+                            @if (weatherForecast.weather_state_name == "Light Rain")
+                            {
+                        <p> <img class="resize" src=https://www.metaweather.com/static/img/weather/lr.svg style="width:175px; height:175px;"> </p>
+                            }
+                            else if (weatherForecast.weather_state_name == "Heavy Cloud")
+                            {
+                        <p> <img class="resize" src=https://www.metaweather.com/static/img/weather/hc.svg style="width:175px; height:175px;"> </p>
+                            }
+                            else if (weatherForecast.weather_state_name == "Heavy Rain")
+                            {
+                        <p> <img class="resize" src=https://www.metaweather.com/static/img/weather/hr.svg style="width:175px; height:175px;"> </p>
+                            }
+                            else if (weatherForecast.weather_state_name == "Showers")
+                            {
+                           <p><img class="resize" src=https://www.metaweather.com/static/img/weather/s.svg style="width:175px; height:175px;"> </p>
+                            }
+                            else if (weatherForecast.weather_state_name == "Light Cloud")
+                            {
+                        <p> <img class="resize" src=https://www.metaweather.com/static/img/weather/lc.svg style="width:175px; height:175px;"> </p>
+                            }
+                            else if (weatherForecast.weather_state_name == "Clear")
+                            {
+                        <p> <img class="resize" src=https://www.metaweather.com/static/img/weather/c.svg style="width:175px; height:175px;"> </p>
+                            }
+                            else if (weatherForecast.weather_state_name == "hail")
+                            {
+                        <p> <img class="resize" src=https://www.metaweather.com/static/img/weather/h.svg style="width:175px; height:175px;"> </p>
+                            }
+                            else if (weatherForecast.weather_state_name == "thunderstorm")
+                            {
+                        <p> <img class="resize" src=https://www.metaweather.com/static/img/weather/t.svg style="width:175px; height:175px;"> </p>
+                            }
+                            else if (weatherForecast.weather_state_name == "snow")
+                            {
+                        <p> <img class="resize" src=https://www.metaweather.com/static/img/weather/sn.svg style="width:175px; height:175px;"> </p>
+                            }
+                            else
+                            {
+                        <p> <img class="resize" src=https://www.metaweather.com/static/img/weather/sl.svg style="width:175px; height:175px;"> </p>
+                            }
+
+                        </tr>
+                        }
                     </tbody>
                 </table>
-                                @foreach (var weatherForecast in Main.consolidated_weather)
-                                {
-                @if (weatherForecast.weather_state_name == "Light Rain")
-                {
-<p> <img class="resize" src=https://www.metaweather.com/static/img/weather/lr.svg style="width:175px; height:175px;"> </p> }
-else if (weatherForecast.weather_state_name == "Heavy Cloud")
-{
-<p> <img class="resize" src=https://www.metaweather.com/static/img/weather/hc.svg style="width:175px; height:175px;"> </p> }
-else if (weatherForecast.weather_state_name == "Heavy Rain")
-{
-<p> <img class="resize" src=https://www.metaweather.com/static/img/weather/hr.svg style="width:175px; height:175px;"> </p> }
-else if (weatherForecast.weather_state_name == "Showers")
-{
-<p> <img class="resize" src=https://www.metaweather.com/static/img/weather/s.svg style="width:175px; height:175px;"> </p> }
-else if (weatherForecast.weather_state_name == "Light Cloud")
-{
-<p> <img class="resize" src=https://www.metaweather.com/static/img/weather/lc.svg style="width:175px; height:175px;"> </p> }
-else if (weatherForecast.weather_state_name == "Clear")
-{
-<p> <img class="resize" src=https://www.metaweather.com/static/img/weather/c.svg style="width:175px; height:175px;"> </p> }
-else if (weatherForecast.weather_state_name == "hail")
-{
-<p> <img class="resize" src=https://www.metaweather.com/static/img/weather/h.svg style="width:175px; height:175px;"> </p> }
-                    else if (weatherForecast.weather_state_name == "thunderstorm")
-                    {
-<p> <img class="resize" src=https://www.metaweather.com/static/img/weather/t.svg style="width:175px; height:175px;"> </p>}
-else if (weatherForecast.weather_state_name == "snow")
-{
-<p> <img class="resize" src=https://www.metaweather.com/static/img/weather/sn.svg style="width:175px; height:175px;"> </p> }
-                    else
-                    {
-<p> <img class="resize" src=https://www.metaweather.com/static/img/weather/sl.svg style="width:175px; height:175px;"> </p>}}}
+}       

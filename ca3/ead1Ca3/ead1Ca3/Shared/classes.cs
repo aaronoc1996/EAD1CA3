@@ -9,7 +9,7 @@ namespace ead1Ca3.Shared
 
     public class Root
     {
-        public Consolidated_Weather[] consolidated_weather { get; set; }
+        public ConsolidatedWeather[] consolidated_weather { get; set; }
         public DateTime time { get; set; }
         public DateTime sun_rise { get; set; }
         public DateTime sun_set { get; set; }
@@ -31,7 +31,7 @@ namespace ead1Ca3.Shared
         public string latt_long { get; set; }
     }
 
-    public class Consolidated_Weather
+    public class ConsolidatedWeather
     {
         public long id { get; set; }
         public string weather_state_name { get; set; }
